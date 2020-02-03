@@ -26,15 +26,15 @@
     <form action="" method="POST">
         <div class="form-group">
             <label for="nome">Nome</label>
-            <input type="text" class="form-control" name="nome" id="nome" value="<?php if(isset($updateDados)){echo $updateDados['nome'];}  ?>">
+            <input type="text" class="form-control" name="nome" id="nome" value="<?php if(isset($updateDados)){echo $updateDados['nome'];}?>" required>
         </div>
         <div class="form-group">
             <label for="preco">Preço</label>
-            <input type="text" class="form-control" name="preco" id="preco" value="<?php if(isset($updateDados)){echo $updateDados['preco'];}  ?>" >
+            <input type="text" class="form-control" name="preco" id="preco" value="<?php if(isset($updateDados)){echo $updateDados['preco'];}?>" required>
         </div>
         <div class="form-group">
             <label for="quantidade">Quantidade</label>
-            <input type="text" class="form-control" name="quantidade" id="quantidade" value="<?php if(isset($updateDados)){ echo $updateDados['quantidade'];}  ?>" >
+            <input type="text" class="form-control" name="quantidade" id="quantidade" value="<?php if(isset($updateDados)){ echo $updateDados['quantidade'];}?>" required>
         </div>
         <div class="form-group">
             <select name="categoria_id" class="form-control" id="categoria_id" required>

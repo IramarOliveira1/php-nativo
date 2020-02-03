@@ -29,7 +29,7 @@
         <form  method="POST">
             <div class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" class="form-control" name="nome" value="<?php if(isset($returnCategory)){echo $returnCategory['nome']; } ?>">
+                <input type="text" class="form-control" name="nome" value="<?php if(isset($returnCategory)){echo $returnCategory['nome'];}?>" required>
             </div>
             <input type="submit" class="btn btn-outline-success" value="<?php if(isset($returnCategory)){echo"Atualizar"; }else{echo"Cadastar"; }?>">
         </form>
